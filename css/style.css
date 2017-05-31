@@ -1,0 +1,627 @@
+.container{
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.con_head{
+	width:100%;
+	height:44px;
+	line-height:44px;
+	background:red;
+	color:#fff;
+	font-size:18px;
+	text-align: center;
+}
+.con_cho{
+	width:100%;
+	height:94.62%;
+	background: url("../img/bg.png") no-repeat center;
+	background-size:100% 100%;
+	overflow-y:scroll;
+	overflow-x:hidden;  
+}
+.cho_img{
+	display: inline-block;
+	float: left;
+	width:41.6%;
+	margin:0.974% 4.2%;
+}
+.img_con{
+	display: inline-block;
+	width:100%;
+	height:100%;
+}
+/*祈福、分享按钮*/
+.cho_btns{
+	display: inline-block;
+	width:91.47%;
+	height:8.88%;
+	float: left;
+	margin-left:4.2%;
+}
+.pray_btn,.share_btn{
+	display: inline-block;
+	width:18%;
+	height: 26px;
+	line-height:26px;
+	text-align:center;
+	font-size:14px;
+	background:url("../img/pray_bg.png") no-repeat center;
+	background-size:100% 100%;
+	color:#fff799;	
+}
+.pray_btn{
+	margin-left:7%;
+	float:left;
+}
+.share_btn{
+	margin-right:7%;
+	float:right;
+	border:none;
+	outline:none;
+}
+/*弹出遮罩层提示*/
+.cho_tip{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0;
+	top:0;
+	display: none;
+}
+.tip_con{
+	width:91.47%;
+	height:134px;
+	background:url("../img/tip_bg.png") no-repeat center;
+	background-size:100% 100%;
+	position: relative;
+	left:50%;
+	top:43%;
+	margin-left:-45.735%; 
+	z-index: 3;
+}
+.tip_title{
+	width:100%;
+	height:28px;
+	line-height:28px;
+	text-align: center;
+	color:#fff798;
+	font-size: 16px;
+	padding-top:16px;
+}
+.tip_ask{
+	width:100%;
+	height:26px;
+	line-height: 26px;
+	color:#fef200;
+	font-size: 14px;
+	text-align: center;
+}
+.tip_ask span{
+	color:#fef200;
+}
+.t_btns{
+	width:61.8%;
+	height:66px;
+	line-height:66px;
+	position: relative;
+	top:0;
+	left: 19.1%;
+}
+.re_btn{
+	background: #e70012;
+	color:#fcf897;
+	border-radius:4px;
+	position: absolute;
+	top:28%;
+	left: 0;
+	border:1px solid #ba0003;
+}
+.sure_btn,.sure_btnf{
+	background: #fff79a;
+	color:#f60003;
+	border-radius:4px;
+	position: absolute;
+	top:28%;
+	right: 0;
+}
+.re_btn,.sure_btn,.sure_btnf{
+	display: inline-block;
+	width:38.2%;
+	height:28px;
+	line-height:28px;
+	text-align: center;
+}
+/*serve供佛*/
+.ser_container{
+	width:100%;
+	height:100%;
+	overflow: hidden;	
+}
+.ser_head{
+	width:100%;
+	height:44px;
+	line-height:44px;
+	background:#fe0000;
+	color:#fff;
+	position: relative;
+	font-size:18px;
+}
+.ser_back{
+	width:4.3%;
+	height:43.18%;
+	display: inline-block;
+	position: absolute;
+	left:4%;
+	top:30%;
+}
+.ser_back img{
+	display: inline-block;
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.ser_name{
+	display: inline-block;
+	width: 80%;
+	height:44px;
+	line-height:44px;
+	color:#fff;
+	text-align: center;
+	position: absolute;
+	left:50%;
+	margin-left:-40%;
+	top:0;
+}
+.serve_con{
+	width:100%;
+	height:95%;
+	background:url("../img/bg.png") no-repeat center;
+	background-size:100% 100%;
+	overflow: hidden;
+	position: relative;
+}
+.img_bg{
+	width:82.67%;
+	height:50%;
+	position: relative;
+	left: 50%;
+	top:4.2%;
+	margin-left:-41.335%;
+}
+.img_bg img{
+	width:100%;
+	height:100%;
+}
+.img_fo{
+	width: 43.467%;
+    height: 30.86%;
+    position: relative;
+    left: 50%;
+    top: -34%;
+    margin-left: -21.7335%;
+}
+.img_fo img{
+	width:100%;
+	height:100%;
+}
+.left{
+	width:55.33%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:1;
+}
+.left img,.right img{
+	width:100%;
+	height:100%;
+}
+.m_l{
+	-webkit-animation: m_l 1s forwards;
+	-o-animation: m_l 1s forwards;
+	animation: m_l 1s forwards;
+}
+@keyframes m_l{
+	from{
+
+	}
+	to{
+		left:-23%;
+	}
+}
+@-webkit-keyframes m_l{
+	from{
+
+	}
+	to{
+		left:-23%;
+	}
+}
+
+.right{
+	width:55.33%;
+	height:100%;
+	position: absolute;
+	right:0;
+	top:0;
+	z-index:1;
+}
+.m_r{
+	-webkit-animation: m_r 1s forwards;
+	-o-animation: m_r 1s forwards;
+	animation: m_r 1s forwards;
+}
+@keyframes m_r{
+	from{
+
+	}
+	to{
+		right:-23%;
+	}
+}
+@-webkit-keyframes m_r{
+	from{
+
+	}
+	to{
+		right:-23%;
+	}
+}
+.desk{
+	width:100%;
+	height:40.76%;
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+.desk img{
+	width: 100%;
+	height:100%;
+}
+.candle_l{
+	width:30px;
+	height:115px;
+	position: absolute;
+	left:28.26%;
+	bottom:16.57%;
+}
+.candle_r{
+	width:30px;
+	height:115px;
+	position: absolute;
+	right:28.26%;
+	bottom:16.57%;
+}
+.candle_l img,.candle_r img{
+	width:100%;
+	height:100%;
+}
+.incense{
+	width:23.86%;
+	height:10.23%;
+	position: absolute;
+	left:50%;
+	bottom:17.2%;
+	margin-left:-11.93%;
+    z-index: 2;
+}
+.incense img{
+	width:100%;
+	height:100%;
+}
+.fruit_l{
+	width:23.86%;
+	height:10.23%;
+	position: absolute;
+	left:7%;
+	bottom:11.3%;
+	z-index: 2;
+}
+.fruit_r{
+	width:23.86%;
+	height:10.23%;
+	position: absolute;
+	right:7%;
+	bottom:11.3%;
+	z-index: 2;
+}
+.fruit_l img,.fruit_r img{
+	width:100%;
+	height:100%;
+}
+.loading{
+	width:100%;
+	height:100%;
+	background:#eee;
+	position: relative;
+	left: 0;
+	top:0;
+}
+.load_img{
+	width:20%;
+	height:13.84%;
+	position: absolute;
+	left:50%;
+	margin-left:-10%;
+	top:36.57%;
+}
+.ser_btns{
+	display: inline-block;
+	width:91.47%;
+	height:8.88%;
+	position: absolute;
+	left:50%;
+	margin-left:-45.735%;
+	bottom:0;
+	z-index: 2;
+}
+/*选香页面*/
+/*选水果页面*/
+
+.incense_cho,.con_fruit{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	overflow-y:scroll;
+	overflow-x:hidden;  
+	display: none;
+}
+.tip_txt{
+	width:91.47%;
+	height:82px;
+	background: url("../img/tip_bg.png") no-repeat center;
+	background-size:100% 100%;
+    margin-top:10%;
+    margin-left:4.265%;
+}
+.safe,.fruit{
+	width:100%;
+	height:38.84%;
+	float:left;
+	margin-top:7%;
+	position: relative;
+}
+.s_title{
+	width:18px;
+	height:62px;
+	line-height: 18px;
+	background:#fe0000;
+	color:#ffef03;
+	font-size:16px;
+	padding:8px;
+	border-radius:4px;
+	margin-left:22%;
+	margin-top:12px;
+}
+.four{
+	height: 72px;
+}
+.s_censer{
+	width:73.86%;
+	height:34.2%;
+	margin-left:13.07%;
+}
+.s_board{
+	width:73.86%;
+	height:7.2%;
+	margin-left:13.07%;
+}
+.s_incense{
+	width:14%;
+	height:120px;
+	position: absolute;
+	left:50%;
+	top:0;
+	margin-left:-3%;
+	z-index: -1;
+}
+.s_fruit{
+	width:31.33%;
+	height:108px;
+	position: absolute;
+	left:50%;
+	top:0;
+	margin-left:-15.665%;
+}
+.s_tip{
+	width:42px;
+	height:42px;
+	line-height: 42px;
+	border-radius:42px;
+	background:#ff0000;
+	color: #fff100;
+	text-align: center;
+    position: relative;
+    left: 69%;
+    top: -20%;
+}
+.s_num{
+	padding-top:4px;
+	height: 16px;
+	line-height:16px;
+	font-size:16px;
+	color:#fff100;
+}
+.s_unit{
+	height: 12px;
+	line-height:12px;
+	font-size:12px;
+	color:#fff100;
+}
+/*选择香提示*/
+.sure_task,.sure_taskf{
+	width: 100%;
+	height:100%;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:3;
+	overflow:hidden;
+	display: none;
+}
+.contain_img{
+    width: 14%;
+    position: absolute;
+    left: 46%;
+    top: 62%;
+}
+.contain_img img{
+	width:100%;
+}
+.smoke{
+    width: 27.73%;
+    height: 121px;
+    position: absolute;
+    left: 36.135%;
+    bottom: 37%;
+    display: none;
+}
+/*燃香过程*/
+.contain_burning{
+	width:100%;
+	height: 100%;
+	background:rgba(0,0,0,0.8);
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+	display: none;
+}
+.candle_move{
+	width:8%;
+	position: absolute;
+	left: 0;
+	top:50%;
+}
+.incense_move{
+	width:11.8%;
+	position: absolute;
+	right: 0;
+	top:50%;
+}
+.candle_m{
+	-webkit-animation: candle_m 1s forwards,candle_m1 1s 2s forwards;
+	-o-animation: candle_m 1s forwards,candle_m1 1s 2s forwards;
+	animation: candle_m 1s forwards,candle_m1 1s 2s forwards;
+}
+@-keyframes candle_m{
+	from{}
+	to{left:46%;}
+}
+@-webkit-keyframes candle_m{
+	from{}
+	to{left:46%;}
+}
+
+@-keyframes candle_m1{
+	from{}
+	to{opacity: 0;}
+}
+@-webkit-keyframes candle_m1{
+	from{}
+	to{opacity: 0;}
+}
+.incense_m{
+	-webkit-animation: incense_m 1s forwards,incense_m1 1s 2s forwards;
+	-o-animation: incense_m 1s forwards,incense_m1 1s 2s forwards;
+	animation: incense_m 1s forwards,incense_m1 1s 2s forwards;
+}
+@-keyframes incense_m{
+	from{}
+	to{right:39%;}
+}
+@-webkit-keyframes incense_m{
+	from{}
+	to{right:39%;}
+}
+@-keyframes incense_m1{
+	from{}
+	to{opacity:0;}
+}
+@-webkit-keyframes incense_m1{
+	from{}
+	to{opacity:0;}
+}
+.incense_burn{
+	width:20.26%;
+	position: absolute;
+	right: 39%;
+	top:39%;
+	display: none;
+}
+/*已经供过香的提示*/
+.done_incense,.done_fruit{
+    width: 91.47%;
+    height: 82px;
+    background: url("../img/done_tip.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-left: -45.735%;
+    position: relative;
+    left: 50%;
+    bottom: 61%;
+    z-index: 2;
+    display: none;
+}
+/*分享区域内容*/
+.share_con{
+	width:100%;
+	height:80px;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	background:#fff;
+	z-index:4;
+	overflow: hidden;
+	display: none;
+}
+.share_con li{
+	display: inline-block;
+	float: left;
+	width:20%;
+	height:80px;
+}
+.share_con a{
+    float: left;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: url("../img/share.png");
+    margin-top: 5%;
+    margin-left: 15%;
+    background-size: 500%; 
+}
+.share_con span{
+	display: block;
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	color:#000;
+	font-size:12px;
+	float:left;
+	text-align: center;
+}
+.share_con .share_1{
+    background-position: 0 0;
+}
+.share_con .share_2{
+   background-position: 25% 0;
+}
+.share_con .share_3{
+    background-position: 50% 0;
+}
+.share_con .share_4{
+    background-position: 75% 0;
+}
+.share_con .share_5{
+    background-position: 100% 0;
+}
