@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">	
+	<title>礼佛</title>
+	<meta name="site" content="content site">
+    <meta name="Site" content="content Site">
+    <meta name="title" content="content title">
+    <meta name="Title" content="content Title">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/share.min.css">
+</head>
+<body>
+	<div class="ser_container">
+		<div class="loading"><img class="load_img" src="../img/loading.gif"></div>
+		<div class="ser_head">
+			<div class="ser_back"><img src="../img/back.png"></div>
+			<div class="ser_name"></div>
+		</div>
+		<div class="serve_con">
+			<div class="img_bg"><img src="../img/img_bg.png" /></div>
+			<div class="img_fo"><img class="fo_src" src="../img/fo0.png" /></div>
+			<div class="left"><img src="../img/left.png" /></div>
+			<div class="right"><img src="../img/right.png" /></div>
+			<div class="desk"><img src="../img/desk.png" /></div>
+			<div class="candle_l"><img src="../img/candle.gif" /></div>
+			<div class="candle_r"><img src="../img/candle.gif" /></div>
+			<div class="incense"><img src="../img/incense.png"></div>
+			<div class="contain_img"></div>
+			<img class="smoke" src="../img/smoke.gif">
+			<div class="fruit_l compote"><img class="fruit_change" src="../img/fruit.png"></div>
+			<div class="fruit_r compote"><img class="fruit_change" src="../img/fruit.png"></div>
+			<div class="ser_btns">
+				<div class="pray_btn">祈福</div><button class="share_btn" onclick="haoji.share();">分享</button>
+			</div>
+		</div>
+		<div class="incense_cho">
+			<div class="tip_txt">
+				<div class="tip_title">温馨提示</div>
+				<div class="tip_ask">请根据自己的需要选择供香</div>
+			</div>
+			<div class="safe" data-incense="平安香" data-money="免费" img_name="safe0">
+				<div class="s_title">平安香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/safe.png" />				
+				<div class="s_tip">免费</div>
+			</div>
+			<div class="safe" data-incense="智慧香" data-money="30功德币" img_name="smart0">
+				<div class="s_title">智慧香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/smart.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="safe" data-incense="消灾香" data-money="30功德币" img_name="remove0">
+				<div class="s_title">消灾香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/remove.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="safe" data-incense="财运香" data-money="30功德币" img_name="fortune0">
+				<div class="s_title">财运香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/fortune.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="safe" data-incense="名望香" data-money="30功德币" img_name="fame0">
+				<div class="s_title">名望香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/fame.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="safe" data-incense="桃花香" data-money="30功德币" img_name="peach0">
+				<div class="s_title">桃花香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/peach.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="safe" data-incense="送子香" data-money="30功德币" img_name="child0">
+				<div class="s_title">送子香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/child.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="safe" data-incense="忏悔香" data-money="30功德币" img_name="confess0">
+				<div class="s_title">忏悔香</div>
+				<img class="s_censer" src="../img/censer.png" />
+				<img class="s_incense" src="../img/confess.png" />				
+				<div class="s_tip"><div class="s_num">30</div><div class="s_unit">功德币</div></div>
+			</div>
+		</div>
+		<div class="sure_task">
+			<div class="tip_con">
+				<div class="tip_title">温馨提示</div>
+				<div class="tip_ask">您确定为佛祖供奉<span class="data_incense"></span><span class="data_money"></span>？</div>
+				<div class="t_btns">
+					<div class="re_btn">重新选择</div>
+					<div class="sure_btn">确定</div>
+				</div>
+			</div>
+		</div>
+		<div class="contain_burning">
+			<img class="candle_move" src="../img/candle.gif">
+			<img class="incense_move" src="../img/burn.png">
+			<img class="incense_burn" src="../img/burn.gif">
+		</div>
+		<div class="done_incense">
+			<div class="tip_title">温馨提示</div>
+			<div class="tip_ask">每日只可供香一次。诚意虽好，但不要浪费呦！</div>
+		</div>
+		<div class="con_fruit">
+			<div class="tip_txt">
+				<div class="tip_title">温馨提示</div>
+				<div class="tip_ask">请根据自己的需要选择供果</div>
+			</div>
+			<div class="fruit" data-incense="平安果" data-money="免费" img_name="apple">
+				<div class="s_title">平安果</div>
+				<img class="s_board" src="../img/board.png" />
+				<img class="s_fruit" src="../img/apple.png" />				
+				<div class="s_tip">免费</div>
+			</div>
+			<div class="fruit" data-incense="长寿桃" data-money="10功德币" img_name="longpeach">
+				<div class="s_title">长寿桃</div>
+				<img class="s_board" src="../img/board.png" />
+				<img class="s_fruit" src="../img/longpeach.png" />				
+				<div class="s_tip"><div class="s_num">10</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="fruit" data-incense="多子石榴" data-money="10功德币" img_name="guava">
+				<div class="s_title four">多子石榴</div>
+				<img class="s_board" src="../img/board.png" />
+				<img class="s_fruit" src="../img/guava.png" />				
+				<div class="s_tip"><div class="s_num">10</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="fruit" data-incense="如意柿" data-money="10功德币" img_name="persimmon">
+				<div class="s_title">如意柿</div>
+				<img class="s_board" src="../img/board.png" />
+				<img class="s_fruit" src="../img/persimmon.png" />				
+				<div class="s_tip"><div class="s_num">10</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="fruit" data-incense="牵挂梨" data-money="10功德币" img_name="pear">
+				<div class="s_title">牵挂梨</div>
+				<img class="s_board" src="../img/board.png" />
+				<img class="s_fruit" src="../img/pear.png" />				
+				<div class="s_tip"><div class="s_num">10</div><div class="s_unit">功德币</div></div>
+			</div>
+			<div class="fruit" data-incense="心想事成" data-money="10功德币" img_name="orange">
+				<div class="s_title four">心想事成</div>
+				<img class="s_board" src="../img/board.png" />
+				<img class="s_fruit" src="../img/orange.png" />				
+				<div class="s_tip"><div class="s_num">10</div><div class="s_unit">功德币</div></div>
+			</div>
+		</div>
+		<div class="done_fruit">
+			<div class="tip_title">温馨提示</div>
+			<div class="tip_ask">每日只可供果一次。诚意虽好，但不要浪费呦！</div>
+		</div>
+		<div class="sure_taskf">
+			<div class="tip_con">
+				<div class="tip_title">温馨提示</div>
+				<div class="tip_ask">您确定要更换供奉的佛祖画像？</div>
+				<div class="t_btns">
+					<div class="re_btn">重新选择</div>
+					<div class="sure_btnf">确定</div>
+				</div>
+			</div>
+		</div>
+		<div class="share_con">
+			<!-- <li><a class="share_1"></a><span>微信好友</span></li>
+			<li><a class="share_2"></a><span>朋友圈</span></li>
+			<li><a class="share_3"></a><span>QQ好友</span></li>
+			<li><a class="share_4"></a><span>QQ空间</span></li>
+			<li><a class="share_5"></a><span>微博</span></li> -->
+		</div>
+	</div>
+	<!--MOB SHARE BEGIN-->
+	<div class="-mob-share-ui-button -mob-share-open">分享</div>
+	<div class="-mob-share-ui" style="display: none">
+	    <ul class="-mob-share-list">
+	        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+	        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+	        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+	        <li class="-mob-share-qq"><p>QQ好友</p></li>
+	        <li class="-mob-share-renren"><p>人人网</p></li>
+	        <li class="-mob-share-kaixin"><p>开心网</p></li>
+	        <li class="-mob-share-douban"><p>豆瓣</p></li>
+	        <li class="-mob-share-facebook"><p>Facebook</p></li>
+	        <li class="-mob-share-twitter"><p>Twitter</p></li>
+	    </ul>
+	    <div class="-mob-share-close">取消</div>
+	</div>
+	<div class="-mob-share-ui-bg"></div>
+	<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=你的appkey"></script>
+	<!--MOB SHARE END-->
+	<script type="text/javascript" src="../js/jquery-2.0.0.min.js"></script>
+	<script type="text/javascript" src="../js/ser.js"></script>
+	
+	
+</body>
+</html>
